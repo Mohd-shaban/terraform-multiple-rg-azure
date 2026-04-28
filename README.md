@@ -2,18 +2,19 @@
 
 ## Overview
 
-This project demonstrates Infrastructure as Code (IaC) using Terraform on Microsoft Azure.
-The project provisions multiple Azure Resource Groups using variables and stores Terraform state remotely using Azure Blob Storage backend.
+This project demonstrates Infrastructure as Code (IaC) implementation using Terraform on Microsoft Azure. The project automates the provisioning of multiple Azure Resource Groups using Terraform variables and configures remote backend state management using Azure Blob Storage.
 
 ---
 
 ## Features
 
-* Multiple Azure Resource Groups creation
-* Terraform variables implementation
-* Remote backend configuration using Azure Storage Account
-* Terraform state management with Azure Blob Storage
-* Clean Terraform file structure
+* Provisioned multiple Azure Resource Groups using variables
+* Implemented Infrastructure as Code (IaC) using Terraform
+* Configured Azure Remote Backend using Blob Storage
+* Managed Terraform state files securely in Azure Storage Account
+* Used unique backend key for remote state management
+* Maintained clean Terraform project structure
+* Integrated project with GitHub for version control
 
 ---
 
@@ -23,26 +24,30 @@ The project provisions multiple Azure Resource Groups using variables and stores
 * Microsoft Azure
 * Azure Blob Storage
 * Azure Resource Groups
-* VS Code
+* Git & GitHub
+* Visual Studio Code
 
 ---
 
 ## Project Structure
 
-```text
-main.tf
-variables.tf
-terraform.tfvars
-provider.tf
-backend.tf
-.gitignore
+```text id="8d6k3a"
+terraform-multiple-rg-azure/
+│
+├── main.tf
+├── variables.tf
+├── provider.tf
+├── backend.tf
+├── .terraform.lock.hcl
+├── .gitignore
+└── README.md
 ```
 
 ---
 
 ## Terraform Commands Used
 
-```bash
+```bash id="k2m9pz"
 terraform init
 terraform plan
 terraform apply
@@ -51,24 +56,36 @@ terraform destroy
 
 ---
 
-## Backend Configuration
+## Remote Backend Configuration
 
-Terraform remote backend is configured using:
+Terraform Remote Backend was configured using:
 
 * Azure Resource Group
 * Azure Storage Account
 * Azure Blob Container
 
-This helps in centralized state management and state locking.
+This setup helps in:
+
+* Centralized state management
+* Better collaboration
+* State locking support
+* Secure Terraform state storage
 
 ---
 
-## Learning Outcome
+## Learning Outcomes
 
-Through this project, I gained hands-on experience with:
+Through this project, I gained hands-on experience in:
 
-* Infrastructure as Code (IaC)
-* Terraform variables
-* Azure resource provisioning
-* Remote backend configuration
-* Terraform state management
+* Terraform Infrastructure Automation
+* Azure Resource Provisioning
+* Terraform Variables
+* Remote Backend Configuration
+* Terraform State Management
+* Git and GitHub Workflow
+
+---
+
+## GitHub Repository
+
+This project is maintained using GitHub for version control and project management.
